@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="A personal web page about Benhin.">
+    <title>About [Your Name]</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>About Benhin</h1>
+    </header>
+
+    <!-- Profile Picture and Link -->
+    <section>
+        <a href="https://www.your-social-media-link.com" target="_blank">
+            <img src="img.jpg" alt="[Your Name]" id="profile-pic">
+        </a>
+    </section>
+
+    <!-- About Me Section -->
+    <section>
+        <h2>About Me</h2>
+        <p>Hello! I'm Benhin. I have a strong passion for web development and constantly strive to improve my skills. Here are some of my strengths and weaknesses:</p>
+        <ul>
+            <li>Strengths:
+                <ul>
+                    <li>creativity</li>
+                    <li>cricket</li>
+                    <li>sports</li>
+                </ul>
+            </li>
+            <br>
+            <li>Weaknesses:
+                <ul>
+                    <li>Perfectionism</li>
+                    <li>Tendency to overthink</li>
+                    <li>introvert</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Bucket List Table -->
+    <section>
+        <h2>My Bucket List</h2>
+        <table>
+            <tr>
+                <th>Serial Number</th>
+                <th>Items</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Visit Paris</td>
+                <td>Not Completed</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Learn to play violin</td>
+                <td>In Progress</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>learn german language</td>
+                <td>Not Completed</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Win Big Bash</td>
+                <td>In Progress </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Learn a new language</td>
+                <td>In Progress</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Media Embedding -->
+    <section>
+        <h2>My Favorite Media</h2>
+        <h3>Favorite Movie:</h3>
+        <video width="320" height="240" controls>
+            <source src="vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h3>Favorite Song:</h3>
+        <audio controls>
+            <source src="song.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </section>
+
+    <!-- Button for Interactivity -->
+    <button id="alertButton">Click me!</button>
+
+    <script>document.getElementById('alertButton').addEventListener('click', function() {
+        alert('Hello, welcome to my page!');
+    });
+    
+    document.getElementById('profile-pic').addEventListener('mouseover', function() {
+        document.body.style.backgroundColor = '#e6e6fa';
+    });
+    
+    document.getElementById('profile-pic').addEventListener('mouseout', function() {
+        document.body.style.backgroundColor = '#f0f8ff';
+    });
+    </script>
+</body>
+</html>
